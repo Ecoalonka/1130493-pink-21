@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alena Tereshchenko](https://up.htmlacademy.ru/adaptive/21/user/1130493).
-* Наставник: `Неизвестно`.
+* Наставник: `Николай Момотенко`.
 
 ---
 
