@@ -14,23 +14,23 @@
         <nav class="main-nav">
           <button class="maim-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active ">
-          <a class="site-list__item-link">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active ">
+          <a class="main-nav__link">
             Главная
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="#">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">
             Фотографии
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__item-link" href="form.html">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
             Конкурс
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="main-nav__item">
           <a class="site-list__item-link" href="#">
             HTML Academy
           </a>
@@ -48,17 +48,17 @@
         </p>
   <a class="represent__button" type="button" href="https://www.apple.com/app-store/">Скачать приложение</a>
         <ul class="operating-systems">
-          <li class="operating-system">
-            <a class="represent__button" type="button" href="https://www.apple.com/app-store/">
-            <img src="https://via.placeholder.com/150x150" alt="apple" class="operating-system-apple"></a>
+          <li class="operating-systems__item">
+            <a class="operating-systems__link" type="button" href="https://www.apple.com/app-store/">
+            <img class="operating-systems__icon" src="https://via.placeholder.com/150x150" alt="apple"></a>
           </li>
-          <li class="operating-system">
-            <a class="represent__button" type="button" href="https://play.google.com/store/apps">
-            <img src="https://via.placeholder.com/150x150" alt="android" class="operating-system-android"></a>
+          <li class="operating-system__item">
+            <a class="operating-systems__link" type="button" href="https://play.google.com/store/apps">
+            <img class="operating-systems__icon" src="https://via.placeholder.com/150x150" alt="android"></a>
           </li>
-          <li class="operating-system">
-            <a class="represent__button" type="button" href="https://www.microsoft.com/uk-ua/windows/windows-10-apps">
-            <img src="https://via.placeholder.com/150x150" alt="windows" class="operating-system-windows"></a>
+          <li class="operating-system__item">
+            <a class="operating-systems__link" type="button" href="https://www.microsoft.com/uk-ua/windows/windows-10-apps">
+            <img class="operating-systems__icon" src="https://via.placeholder.com/150x150" alt="windows"></a>
           </li>
         </ul>
         <p class="represent__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -94,7 +94,7 @@
   <div class="research__wrapper">
     <img src="https://via.placeholder.com/150x150" alt="clock" class="research__clock">
     <h3 class="research__slogan">
-            Эффект на 24 часа!</p>
+            Эффект на 24 часа!</h3>
     <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
     <a class="research__link" href="#">Узнать больше об исследовании</a>
     </div>
@@ -102,9 +102,10 @@
 <section class="reviews">
   <div class="reviews__wrapper slider">
     <h2 class="visually-hidden">Отзывы</h2>
-    <ul class="reviews__slider">
-    <li class="reviews__list slider__list">
-      <blockquote class="reviews__item">
+    <p class="reviews__quote">&#8220;</p>
+    <ul class="reviews__list">
+    <li class="reviews__item slider__item">
+      <blockquote class="reviews__comment">
         <div class="reviews__author-info">
           <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           <cite class="reviews__author-name">Николай Петров</cite>
@@ -112,17 +113,18 @@
         </div>
       </blockquote>
     </li>
-    <li class="reviews__list slider__list">
-      <blockquote class="reviews__item">
+    <li class="reviews__item slider__item">
+      <blockquote class="reviews__comment">
         <div class="reviews__author-info">
-          <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          <p class="reviews__text">"
+            Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           <cite class="reviews__author-name">Николай Петров</cite>
           <p class="reviews__author-description">25 лет, водитель трамвая</p>
         </div>
       </blockquote>
     </li>
-    <li class="reviews__list slider__list">
-      <blockquote class="reviews__item">
+    <li class="reviews__item slider__item">
+      <blockquote class="reviews__comment">
         <div class="reviews__author-info">
           <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
           <cite class="reviews__author-name">Николай Петров</cite>
@@ -131,8 +133,10 @@
       </blockquote>
     </li>
     </ul>
+    <div class="reviews__arrows">
       <button class="reviews__prev" type="button">Предыдущий отзыв</button>
       <button class="reviews__next" type="button">Следующий отзыв</button>
+    </div>
     <p class="reviews__toggles slider__toggles">
       <button class="slider__toggle slider__toggle--current" type="button">1</button>
       <button class="slider__toggle" type="button">2</button>
